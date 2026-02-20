@@ -1,11 +1,9 @@
-class GroupWork:
-    def presentation(self):
-        return "This presented a good work."
+class cmp242Coders:
+    def __init__(self):
+        self .__grade = None
 
-class GoodPresentation(GroupWork):
-    def presentation(self):
-        return "This presentation was awesome."
+    def set_grade(self, score):
+        self.__grade = score
 
-class GoodPresenter(GroupWork):
-    def presentation(self):
-        return "Good Presente."
+    def __getattr__(name):
+        return (self.__grade)
