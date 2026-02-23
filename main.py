@@ -5,5 +5,9 @@ class cmp242Coders:
     def set_grade(self, score):
         self.__grade = score
 
-    def __getattr__(name):
-        return self .__grade
+    def get_grade__(self):
+        return self.__grade
+
+student = cmp242Coders()
+student.set_grade(100)
+print(student.get_grade__())
